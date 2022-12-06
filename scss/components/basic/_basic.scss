@@ -23,7 +23,7 @@ body {
 
 .wrapper-top {
   background: {
-    image: url("/img/background_pictures/welcom_back.jpg");
+    image: url("../img/background_pictures/welcom_back.jpg");
     position: center;
     repeat: no-repeat;
     size: cover;
@@ -157,7 +157,7 @@ body {
   .network::after {
     @extend %extend-translateY_minus35;
     @include content(
-      $content: url("/img/basic_pictures/right_arrow.png"),
+      $content: url("../img/basic_pictures/right_arrow.png"),
       $right: -69px,
       $bottom: 50%,
       $width: 69px,
@@ -170,7 +170,7 @@ body {
   .network::after {
     @extend %extend-translateY_minus35;
     @include content(
-      $content: url("/img/basic_pictures/right_arrow.png"),
+      $content: url("../img/basic_pictures/right_arrow.png"),
       $right: -69px,
       $bottom: 50%,
       $width: 69px,
