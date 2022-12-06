@@ -5,6 +5,7 @@ ___
 * HTML5;
 * CSS (SCSS);
 * BEM methodology;
+* grid, flex, burger menu, accordion(details/summary);
 * responsive and cross-browser coding;
 
 
