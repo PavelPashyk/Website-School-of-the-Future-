@@ -1,0 +1,33 @@
+.certificate {
+  @extend %extend-m_b;
+  min-height: 402px;
+
+  &__block {
+    display: grid;
+    grid: {
+      template-columns: 1fr 1fr;
+      template-rows: 1fr;
+    }
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 490px;
+
+    h2 {
+      font-size: 48px;
+      line-height: 90%;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 103.2%;
+    }
+  }
+
+  &__img {
+    max-width: 457px;
+    height: auto;
+  }
+}

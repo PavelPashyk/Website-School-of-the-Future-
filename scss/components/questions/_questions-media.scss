@@ -1,0 +1,26 @@
+@include desktop {
+  .questions {
+    &__accordion-content {
+      margin: 40px 30px 60px 60px;
+    }
+  }
+}
+
+@include table {
+  .questions {
+    margin-bottom: 20px;
+  }
+}
+
+@include mobile {
+  .questions {
+    &__accordion-title {
+      margin: 15px 20px;
+      font-size: 18px;
+    }
+
+    details[open]::before {
+      width: 15px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.education {
+  @extend %extend-m_b;
+
+  &__block-view {
+    min-height: 150px;
+    margin-bottom: 90px;
+    display: grid;
+    grid: {
+      template-columns: 1fr 1fr 1fr 1fr 1fr;
+      template-rows: 1fr;
+    }
+  }
+
+  &__block-item {
+    @extend %extend-flex_column;
+
+    img {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 30px;
+      @extend %extend-transition_slow;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .education-pay {
+    &::before {
+      @include content(
+        $left: 55px,
+        $bottom: 16px,
+        $width: 139px,
+        $height: 210px,
+        $background: url("/img/img/education/girl-reading.png"),
+      );
+    }
+  }
+}

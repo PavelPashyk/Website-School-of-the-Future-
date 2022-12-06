@@ -1,0 +1,44 @@
+@include laptop {
+  .education {
+    &__block-view {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include table {
+  .education {
+    margin-bottom: 20px;
+
+    &__block-view {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 40px;
+      justify-content: center;
+    }
+
+    &__block-item {
+      max-width: 210px;
+      font-size: 14px;
+    }
+
+    .education-pay {
+      &::before {
+        top: 20px;
+      }
+    }
+  }
+}
+
+@include table_small {
+  .education {
+    .education-pay {
+      &::before {
+        left: 10px;
+        top: 10px;
+        width: 95px;
+        height: 140px;
+      }
+    }
+  }
+}

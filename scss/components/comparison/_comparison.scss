@@ -1,0 +1,91 @@
+.comparison {
+  @extend %extend-m_b;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__img-left {
+    @extend %extend-comparison_img;
+  }
+
+  &__img-right {
+    @extend %extend-comparison_img;
+  }
+
+  &__block-inner {
+    display: flex;
+    align-items: center;
+    width: 676px;
+    height: 490px;
+    @extend %pos-relative;
+
+    &:before {
+      @extend %extend-translateY_minus50;
+      @include content(
+        $left: -350px,
+        $top: 50%,
+        $width: 295px,
+        $height: 321px,
+        $background: url("/img/img/comparison/boy_left.png"),
+      );
+    }
+
+    &::after {
+      @extend %extend-translateY_plus50;
+      @include content(
+        $right: -350px,
+        $bottom: 50%,
+        $width: 295px,
+        $height: 321px,
+        $background: url("/img/img/comparison/boy_right.png"),
+      );
+    }
+  }
+
+  &__content {
+    border-radius: 15px;
+    @extend %extend-flex_column;
+    justify-content: space-between;
+    @extend %pos-relative;
+
+    h3 {
+      font-weight: 700;
+    }
+  }
+
+  .content-light {
+    @include content-item($type: "light");
+  }
+
+  .content-dark {
+    @include content-item($type: "dark");
+  }
+
+  &__list {
+    text-align: start;
+    line-height: 150%;
+
+    li:not(:last-child) {
+      padding-bottom: 10px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__item {
+    @extend %pos-relative;
+    @extend %extend-cursor;
+
+    &::before {
+      border-radius: 50%;
+      @extend %extend-translateY_minus50;
+      @include content($left: -30px, $top: 50%, $width: 9px, $height: 9px);
+    }
+  }
+}

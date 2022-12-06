@@ -1,0 +1,151 @@
+@include desktop {
+  .welcome {
+    &__content {
+      width: 45%;
+    }
+
+    &__img {
+      width: 55%;
+    }
+
+    &__block-text {
+      padding-bottom: 25px;
+
+      :last-child {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .welcome {
+    &__content {
+      width: 50%;
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    h1 {
+      width: 610px;
+      font-size: 60px;
+    }
+
+    &__block-text {
+      font-size: 15px;
+    }
+  }
+
+  @include table {
+    .welcome {
+      margin-bottom: 5px;
+
+      &__container-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      &__block-text {
+        padding-bottom: 10px;
+
+        :last-child {
+          padding-top: 10px;
+        }
+      }
+
+      &__content {
+        h1 {
+          width: 100%;
+          font-size: 50px;
+          padding-bottom: 20px;
+        }
+        max-width: 510px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      &__img {
+        max-width: 510px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include table_small {
+    .header {
+      &__top-logo {
+        margin: 19px 10px 19px 0px;
+      }
+
+      &__top-title {
+        &::after {
+          display: none;
+        }
+      }
+
+      .burger {
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+
+        p {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .nav {
+          display: block;
+
+          &__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+
+      &__top-number {
+        display: none;
+      }
+
+      .nav {
+        display: none;
+
+        .nav__menu {
+          :last-child {
+            margin-left: 0px;
+          }
+          .nav__link-enter {
+            display: none;
+          }
+        }
+      }
+
+      &__top-btn {
+        display: none;
+      }
+
+      &__block-btn {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .welcome {
+    &__content {
+      h1 {
+        font-size: 40px;
+      }
+      max-width: 400px;
+    }
+  }
+}

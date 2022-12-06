@@ -1,0 +1,121 @@
+.footer {
+  padding: 50px 0px 10px;
+  line-height: 169%;
+
+  a {
+    font-size: 14px;
+    display: block;
+    @extend %extend-transition_slow;
+
+    &:hover {
+      color: $blue_light;
+    }
+
+    &:active {
+      color: $red_light;
+      @extend %extend-transition_quick;
+    }
+  }
+
+  &__block {
+    @extend %extend-flex_row;
+    text-align: start;
+    margin-bottom: 20px;
+
+    h4 {
+      font: {
+        weight: 500;
+        size: 20px;
+      }
+    }
+  }
+
+  &__info {
+    font-size: 8px;
+    line-height: 203.2%;
+    color: $grey_dark;
+    margin-bottom: 20px;
+  }
+
+  &__block-logo {
+    width: 240px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 65px;
+  }
+
+  &__class {
+    @extend %extend-flex_column-footer;
+  }
+
+  &__doc {
+    @extend %extend-flex_column-footer;
+
+    a {
+      @extend %pos-relative;
+      margin-left: 31px;
+
+      &::before {
+        @extend %extend-translateY_minus50;
+        @include content(
+          $content: url("/img/basic_pictures/license.png"),
+          $left: -30px,
+          $top: 50%,
+          $width: 21px,
+          $height: 26px
+        );
+      }
+    }
+  }
+
+  &__network {
+    @extend %extend-flex_column-footer;
+
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &__network-block {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__connection {
+    @extend %extend-flex_column-footer;
+    margin-left: 45px;
+  }
+
+  &__address {
+    @extend %pos-relative;
+
+    &::before {
+      @extend %extend-translateY_minus50;
+      @include content(
+        $content: url("/img/basic_pictures/place.png"),
+        $left: -45px,
+        $top: 50%,
+        $width: 46px,
+        $height: 46px
+      );
+    }
+  }
+
+  &__phone {
+    @extend %pos-relative;
+
+    &::before {
+      @extend %extend-translateY_minus50;
+      @include content(
+        $content: url("/img/basic_pictures/telephone.png"),
+        $left: -45px,
+        $top: 50%,
+        $width: 46px,
+        $height: 46px
+      );
+    }
+  }
+}

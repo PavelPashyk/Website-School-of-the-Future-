@@ -1,0 +1,65 @@
+.privilege {
+  &__container {
+    display: flex;
+    min-height: 500px;
+    align-items: flex-start;
+    padding-bottom: 45px;
+    @extend %extend-m_b;
+  }
+
+  .top-title {
+    text-align: start;
+  }
+
+  &__block-list {
+    @extend %extend-flex_column;
+    gap: 10px;
+    max-width: 571px;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  &__block-item {
+    width: inherit;
+    min-height: 104px;
+    height: 100%;
+    padding: 13px 20px 13px 68px;
+    border-radius: 25px;
+    text-align: start;
+    @extend %extend-transition_slow;
+
+    &:hover {
+      background: $white;
+      box-shadow: 5px 15px 40px $shadow_dark;
+
+      h3 {
+        @include gradient;
+      }
+    }
+
+    h3 {
+      font: {
+        weight: 500;
+        size: 20px;
+      }
+      line-height: 100%;
+      padding-bottom: 10px;
+    }
+  }
+
+  .privilege-top {
+    @include privilege-item($type: "top");
+  }
+
+  .privilege-middle {
+    @include privilege-item($type: "middle");
+  }
+
+  .privilege-bottom {
+    @include privilege-item($type: "bottom");
+  }
+
+  &__block-item {
+    @extend %pos-relative;
+  }
+}

@@ -1,0 +1,114 @@
+.price {
+  @extend %extend-m_b;
+
+  &__box {
+    @extend %pos-absolute;
+    top: -70px;
+    right: -25px;
+    width: 251px;
+    height: 100px;
+    background: $gradient_1;
+    box-shadow: 0px 4px 25px $shadow_light;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box-text {
+    color: $white;
+    font: {
+      weight: 500;
+      size: 36px;
+    }
+    line-height: 141%;
+    text-align: center;
+
+    span {
+      color: $grey_light;
+      font-size: 14px;
+      line-height: 141.7%;
+    }
+  }
+
+  &__block-list {
+    @extend %extend-flex_row;
+    padding-bottom: 30px;
+  }
+
+  .price-left {
+    @include price-item($type: "left");
+  }
+
+  .price-middle {
+    @include price-item($type: "middle");
+  }
+
+  .price-right {
+    @include price-item($type: "right");
+  }
+
+  &__content {
+    max-height: 315px;
+    height: 100%;
+  }
+
+  &__item {
+    @extend %pos-relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: space-between;
+    width: 293px;
+    height: 500px;
+    box-shadow: 0px 4px 4px $shadow_light;
+    border-radius: 25px 25px 0px 50px;
+    background: $white;
+    padding: 50px 41px 26px 35px;
+    margin: 70px 65px 0px 0px;
+
+    li {
+      @extend %pos-relative;
+      padding-left: 32px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      @extend %extend-cursor;
+      height: 37px;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        @extend %extend-translateY_minus50;
+        @include content(
+          $content: url("/img/img/price/mark.png"),
+          $left: 0px,
+          $top: 50%,
+          $width: 24px,
+          $height: 24px
+        );
+      }
+    }
+  }
+
+  &__title {
+    font: {
+      weight: 500;
+      size: 20px;
+    }
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: 16px;
+    @include gradient;
+  }
+
+  .price__item-btn {
+    width: 160px;
+    height: 32px;
+    text-transform: none;
+    margin: 0 auto;
+  }
+}

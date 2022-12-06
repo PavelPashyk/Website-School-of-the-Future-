@@ -1,0 +1,26 @@
+$blue: #243976;
+$blue_dark: #4c75a3;
+$blue_light: #49b3f7;
+$white: #ffffff;
+$grey: #e4e5ec;
+$grey_dark: #737373;
+$grey_light: #eff2fd;
+$red_light: #f74949;
+$red_dark: #e30137;
+$shadow_blue: rgba(104, 130, 245, 0.67);
+$shadow_dark: rgba(30, 35, 66, 0.28);
+$shadow_light: rgba(0, 0, 0, 0.15);
+@mixin gradient {
+  background: $gradient_1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+$gradient_1: linear-gradient(26.5deg, #4271df 16.72%, #60e2ff 95.45%);
+$gradient_2: linear-gradient(272.77deg, #864ff1 0%, #49b3f7 100%);
+$gradient_3: linear-gradient(180deg, #eff2fd 0%, #fcfcfc 100%);
+$breakpoint_xxxl: 1120px;
+$breakpoint_xxl: 1000px;
+$breakpoint_xl: 806px;
+$breakpoint_l: 770px;
+$breakpoint_m: 570px;
+$breakpoint_s: 450px;

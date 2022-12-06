@@ -1,0 +1,112 @@
+@include desktop {
+  .comparison {
+    &__block-inner {
+      &::before {
+        left: -250px;
+      }
+
+      &::after {
+        right: -225px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .comparison {
+
+    &__block-inner {
+      width: 580px;
+      height: 460px;
+
+      &::before {
+        left: -180px;
+        transform: translateY(0);
+        top: 0px;
+        width: 229px;
+        height: 210px;
+      }
+
+      &::after {
+        right: -140px;
+        transform: translateY(0);
+        bottom: 0px;
+        width: 229px;
+        height: 210px;
+      }
+    }
+
+    .content-light {
+      min-width: 310px;
+      height: 430px;
+      padding: 30px 10px 40px 20px;
+
+      h3 {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    }
+
+    .content-dark {
+      min-width: 330px;
+      height: 450px;
+      padding: 40px 20px 40px;
+
+      h3 {
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+    }
+
+    &__list {
+      font-size: 14px;
+    }
+  }
+}
+
+@include table {
+  .comparison {
+    margin-bottom: 20px;
+    &__block-inner {
+      width: 550px;
+      height: 420px;
+
+      &::before {
+       background: none;
+      }
+
+      &::after {
+        background: none;
+      }
+    }
+  }
+}
+
+@include table_small {
+  .comparison {
+    &__block-inner {
+      flex-direction: column;
+      min-height: 790px;
+    }
+
+    .content-dark {
+      top: -20px;
+      left: -30px;
+    }
+  }
+}
+
+@include mobile_small {
+  .comparison {
+    .content-light {
+      min-width: 250px;
+
+
+    }
+
+    .content-dark {
+      min-width: 290px;
+
+    }
+  }
+}

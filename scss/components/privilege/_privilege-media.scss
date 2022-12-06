@@ -1,0 +1,33 @@
+@include desktop {
+  .privilege {
+    &__container {
+      align-items: center;
+    }
+  }
+
+  @include laptop {
+    .privilege {
+      margin-bottom: 20px;
+
+      &__container {
+        padding-bottom: 20px;
+      }
+
+      &__block-img {
+        display: none;
+      }
+
+      &__block-list {
+        max-width: 700px;
+      }
+    }
+  }
+}
+
+@include table {
+  .privilege {
+    &__container {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+%extend-flex_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%extend-flex_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+%extend-flex_column-footer {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+%extend-transition_slow {
+  transition: all 0.4s linear;
+}
+
+%extend-transition_quick {
+  transition: all 0.1s linear;
+}
+
+%extend-translateY_plus50 {
+  transform: translateY(50%);
+}
+
+%extend-translateY_minus50 {
+  transform: translateY(-50%);
+}
+
+%extend-translateY_minus35 {
+  transform: translateY(-35%);
+}
+
+%extend-m_b {
+  margin-bottom: 45px;
+}
+
+%extend-cursor {
+  cursor: default;
+}
+
+%pos-absolute {
+  position: absolute;
+}
+
+%pos-relative {
+  position: relative;
+}
+
+%content {
+  @extend %pos-absolute;
+  display: block;
+}
+
+%border_comment-btn {
+  border: {
+    top: 2px solid $blue_dark;
+    left: 2px solid $blue_dark;
+  }
+}
+
+%extend-comparison_img {
+  width: 321px;
+  height: 295px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

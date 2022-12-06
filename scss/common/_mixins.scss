@@ -1,0 +1,240 @@
+@mixin content(
+  $content: "",
+  $left: none,
+  $right: none,
+  $bottom: none,
+  $top: none,
+  $width,
+  $height,
+  $background: none,
+  $background-repeat: no-repeat,
+  $background-size: contain
+) {
+  content: $content;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  top: $top;
+  width: $width;
+  height: $height;
+  background: $background;
+  @extend %content;
+  background-repeat: $background-repeat;
+  background-size: $background-size;
+}
+
+@mixin points-item($type: false) {
+  @if ($type == "top") {
+    justify-content: start;
+    img {
+      @extend %extend-m_b;
+    }
+    .lessons__img::after {
+      z-index: -1;
+      transform: rotateZ(45deg);
+      @include content(
+        $left: 110px,
+        $bottom: 42px,
+        $width: 250px,
+        $height: 2px,
+        $background: $grey
+      );
+    }
+  } @else if($type == "bottom") {
+    justify-content: end;
+    .lessons__block-text {
+      @extend %extend-m_b;
+    }
+  }
+}
+
+@mixin privilege-item($type: false) {
+  @if ($type == "top") {
+    .privilege__block-text::before {
+      @extend %extend-translateY_minus50;
+      @include content(
+        $content: url("/img/img/privilege/part_circle-top.png"),
+        $left: 20px,
+        $top: 50%,
+        $width: 28px,
+        $height: 36px
+      );
+    }
+  } @else if($type == "middle") {
+    .privilege__block-text::before {
+      @extend %extend-translateY_minus50;
+      @include content(
+        $content: url("/img/img/privilege/part_circle-middle.png"),
+        $left: 20px,
+        $top: 50%,
+        $width: 33px,
+        $height: 32px
+      );
+    }
+  } @else if($type == "bottom") {
+    .privilege__block-text::before {
+      @extend %extend-translateY_minus50;
+      @include content(
+        $content: url("/img/img/privilege/part_circle-bottom.png"),
+        $left: 20px,
+        $top: 50%,
+        $width: 42px,
+        $height: 21px
+      );
+    }
+  }
+}
+
+@mixin content-item($type: "dark") {
+  @if ($type == "dark") {
+    z-index: 5;
+    top: 0;
+    left: -60px;
+    margin-right: -60px;
+    min-width: 376px;
+    height: 470px;
+    padding: 50px 60px 50px 80px;
+    background: $gradient_1;
+    color: $white;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    .comparison__item::before {
+      background: $white;
+    }
+  } @else {
+    z-index: 1;
+    min-width: 360px;
+    height: 450px;
+    padding: 40px 60px;
+    background: $gradient_3;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .comparison__item::before {
+      background: $blue;
+    }
+  }
+}
+
+@mixin price-item($type: false) {
+  @if ($type == "left") {
+    &::after {
+      z-index: 5;
+      @include content(
+        $right: -65px,
+        $bottom: 0px,
+        $width: 131px,
+        $height: 199px,
+        $background: url("/img/img/price/girl-left.png")
+      );
+    }
+  } @else if($type == "middle") {
+    &::after {
+      z-index: 5;
+      @include content(
+        $right: -65px,
+        $bottom: 0px,
+        $width: 125px,
+        $height: 271px,
+        $background: url("/img/img/price/girl-middle.png")
+      );
+    }
+  } @else if($type == "right") {
+    &::after {
+      z-index: 5;
+      @include content(
+        $right: -65px,
+        $bottom: 0px,
+        $width: 125px,
+        $height: 349px,
+        $background: url("/img/img/price/girl-right.png")
+      );
+    }
+  }
+}
+
+@mixin comment-btn($type: false) {
+  @if ($type == "back") {
+    &::after {
+      @extend %border_comment-btn;
+      transform: rotate(-45deg);
+      @include content(
+        $left: calc(50% - 4px),
+        $top: calc(50% - 8px),
+        $width: 16px,
+        $height: 16px
+      );
+    }
+  } @else if($type == "next") {
+    &::after {
+      @extend %border_comment-btn;
+      transform: rotate(135deg);
+      @include content(
+        $left: calc(50% - 12px),
+        $top: calc(50% - 8px),
+        $width: 16px,
+        $height: 16px
+      );
+    }
+  }
+}
+
+@mixin comments-item($type: false) {
+  @if ($type == "vk") {
+    border: 5px solid $blue_dark;
+    .comments__item-author {
+      a {
+        color: $blue_dark;
+      }
+    }
+  } @else if($type == "inst") {
+    border: 5px solid $red_dark;
+    .comments__item-author {
+      a {
+        color: $red_dark;
+      }
+    }
+  }
+}
+
+@mixin form-item($type: false) {
+  @if ($type == "number") {
+    &::after {
+      @extend %extend-translateY_plus50;
+      @include content(
+        $content: url("/img/img/connection/number.png"),
+        $left: 15px,
+        $bottom: 50%,
+        $width: 24px,
+        $height: 24px
+      );
+    }
+  } @else if($type == "person") {
+    &::after {
+      @extend %extend-translateY_plus50;
+      @include content(
+        $content: url("/img/img/connection/person.png"),
+        $left: 15px,
+        $bottom: 50%,
+        $width: 24px,
+        $height: 24px
+      );
+    }
+  } @else if($type == "phone") {
+    &::after {
+      @extend %extend-translateY_plus50;
+      @include content(
+        $content: url("/img/img/connection/phone.png"),
+        $left: 15px,
+        $bottom: 50%,
+        $width: 24px,
+        $height: 24px
+      );
+    }
+  }
+}

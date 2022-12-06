@@ -1,0 +1,61 @@
+@include laptop {
+  .connection {
+    &__block {
+      gap: 15px;
+    }
+
+    &__wrapper-form {
+      height: 480px;
+    }
+
+    &__block-text {
+      padding-bottom: 50px;
+      h2 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include table {
+  .connection {
+    margin-bottom: 20px;
+
+    &__block {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__content {
+      flex-direction: column-reverse;
+    }
+
+    &__block-text {
+      padding-bottom: 10px;
+    }
+
+    &__block-img {
+      margin-bottom: 20px;
+    }
+
+    &__wrapper-form {
+      max-width: 430px;
+    }
+  }
+}
+
+@include mobile {
+  .connection {
+    &__wrapper-form {
+      background-image: none;
+      max-width: 320px;
+      height: 420px;
+    }
+  }
+}

@@ -1,0 +1,180 @@
+body {
+  font: {
+    family: "Open Sans", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 15px;
+  }
+  line-height: 130%;
+  color: $blue;
+  overflow-x: hidden;
+
+  a {
+    color: $blue;
+  }
+}
+
+.container {
+  max-width: 1172px;
+  height: 100%;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.wrapper-top {
+  background: {
+    image: url("/img/background_pictures/welcom_back.jpg");
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  max-width: 100%;
+  min-height: 700px;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-height: 200px;
+  height: 100%;
+  background-color: $grey_light;
+}
+
+.btn {
+  width: 273px;
+  height: 67px;
+  background: $gradient_1;
+  border-radius: 90px;
+  color: $white;
+  line-height: 118.2%;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  font: {
+    weight: 700;
+    size: 11px;
+  }
+  text-align: center;
+  @extend %extend-transition_slow;
+
+  &:hover {
+    background: $gradient_2;
+    filter: drop-shadow(0px 6px 21px $shadow_blue);
+  }
+
+  &:active {
+    filter: none;
+    color: $red_light;
+    @extend %extend-transition_quick;
+  }
+}
+
+.logo {
+  width: 236px;
+  height: 67px;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.net-img {
+  @extend %extend-transition_slow;
+  display: block;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+    @extend %extend-transition_quick;
+  }
+}
+
+.network {
+  width: 273px;
+  @extend %pos-relative;
+
+  &__block-btn {
+    margin-bottom: 15px;
+  }
+
+  &__block-text {
+    padding-left: 20px;
+    color: $grey_dark;
+    width: 230px;
+    @extend %extend-flex_row;
+  }
+}
+
+.pay-block {
+  min-height: 160px;
+  height: 100%;
+  background: $grey_light;
+  border-radius: 25px;
+  padding: 20px 50px;
+  @extend %pos-relative;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__content {
+    max-width: 525px;
+    width: 100%;
+    margin-right: 30px;
+    h3 {
+      font: {
+        weight: 500;
+        size: 28px;
+      }
+      line-height: 103.2%;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+}
+
+.top-title {
+  font: {
+    weight: 700;
+    size: 48px;
+  }
+  text-align: center;
+  @extend %extend-m_b;
+  line-height: 100%;
+  padding-top: 30px;
+}
+
+.welcome {
+  .network::after {
+    @extend %extend-translateY_minus35;
+    @include content(
+      $content: url("/img/basic_pictures/right_arrow.png"),
+      $right: -69px,
+      $bottom: 50%,
+      $width: 69px,
+      $height: 69px
+    );
+  }
+}
+
+.privilege {
+  .network::after {
+    @extend %extend-translateY_minus35;
+    @include content(
+      $content: url("/img/basic_pictures/right_arrow.png"),
+      $right: -69px,
+      $bottom: 50%,
+      $width: 69px,
+      $height: 69px
+    );
+  }
+}

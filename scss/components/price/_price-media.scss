@@ -1,0 +1,53 @@
+@include desktop {
+  .price {
+    &__item {
+      padding: 50px 65px 26px 25px;
+      margin: 70px 40px 0px 0px;
+    }
+
+    &__item:last-child {
+      margin: 70px 65px 0px 0px;
+    }
+  }
+}
+
+@include laptop {
+  .price {
+    &__block-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px 30px;
+    }
+  }
+}
+
+@include table {
+  .price {
+    margin-bottom: 20px;
+  }
+}
+
+@include table-small {
+  .price {
+    &__item:last-child {
+      margin: 70px 40px 0px 0px;
+    }
+  }
+}
+
+@include mobile {
+  .price {
+    &__box {
+      width: 200px;
+      height: 80px;
+    }
+
+    &__box-text {
+      font-size: 30px;
+    }
+
+    &__item {
+      height: 520px;
+    }
+  }
+}
