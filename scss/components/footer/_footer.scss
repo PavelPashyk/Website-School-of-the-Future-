@@ -60,7 +60,7 @@
       &::before {
         @extend %extend-translateY_minus50;
         @include content(
-          $content: url("./img/basic_pictures/license.png"),
+          $content: url("/img/basic_pictures/license.png"),
           $left: -30px,
           $top: 50%,
           $width: 21px,
@@ -95,7 +95,7 @@
     &::before {
       @extend %extend-translateY_minus50;
       @include content(
-        $content: url("./img/basic_pictures/place.png"),
+        $content: url("/img/basic_pictures/place.png"),
         $left: -45px,
         $top: 50%,
         $width: 46px,
@@ -110,7 +110,7 @@
     &::before {
       @extend %extend-translateY_minus50;
       @include content(
-        $content: url("./img/basic_pictures/telephone.png"),
+        $content: url("/img/basic_pictures/telephone.png"),
         $left: -45px,
         $top: 50%,
         $width: 46px,

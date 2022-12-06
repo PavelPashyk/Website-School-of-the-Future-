@@ -14,7 +14,6 @@
 
 @include laptop {
   .comparison {
-
     &__block-inner {
       width: 580px;
       height: 460px;
@@ -42,9 +41,9 @@
       padding: 30px 10px 40px 20px;
 
       h3 {
-      font-size: 20px;
-      padding-bottom: 10px;
-    }
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
     }
 
     .content-dark {
@@ -53,9 +52,9 @@
       padding: 40px 20px 40px;
 
       h3 {
-      font-size: 25px;
-      padding-bottom: 10px;
-    }
+        font-size: 25px;
+        padding-bottom: 10px;
+      }
     }
 
     &__list {
@@ -72,7 +71,7 @@
       height: 420px;
 
       &::before {
-       background: none;
+        background: none;
       }
 
       &::after {
@@ -100,13 +99,10 @@
   .comparison {
     .content-light {
       min-width: 250px;
-
-
     }
 
     .content-dark {
       min-width: 290px;
-
     }
   }
 }
