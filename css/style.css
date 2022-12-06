@@ -240,7 +240,7 @@ body a {
 }
 
 .wrapper-top {
-  background-image: url("/img/background_pictures/welcom_back.jpg");
+  background-image: url("../img/background_pictures/welcom_back.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,7 +360,7 @@ body a {
 }
 
 .welcome .network::after {
-  content: url("/img/basic_pictures/right_arrow.png");
+  content: url("../img/basic_pictures/right_arrow.png");
   left: none;
   right: -69px;
   bottom: 50%;
@@ -373,7 +373,7 @@ body a {
 }
 
 .privilege .network::after {
-  content: url("/img/basic_pictures/right_arrow.png");
+  content: url("../img/basic_pictures/right_arrow.png");
   left: none;
   right: -69px;
   bottom: 50%;
@@ -585,7 +585,7 @@ body a {
 }
 .header .nav .nav__menu .nav__link-enter {
   display: inline-block;
-  background-image: url("/img/img/header/persona.png");
+  background-image: url("../img/img/header/persona.png");
   background-position: center;
   background-repeat: no-repeat;
   width: 18px;
@@ -856,7 +856,7 @@ body a {
   top: none;
   width: 139px;
   height: 210px;
-  background: url("/img/img/education/girl-reading.png");
+  background: url("../img/img/education/girl-reading.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1116,7 +1116,7 @@ body a {
   padding-bottom: 10px;
 }
 .privilege .privilege-top .privilege__block-text::before {
-  content: url("/img/img/privilege/part_circle-top.png");
+  content: url("../img/img/privilege/part_circle-top.png");
   left: 20px;
   right: none;
   bottom: none;
@@ -1128,7 +1128,7 @@ body a {
   background-size: contain;
 }
 .privilege .privilege-middle .privilege__block-text::before {
-  content: url("/img/img/privilege/part_circle-middle.png");
+  content: url("../img/img/privilege/part_circle-middle.png");
   left: 20px;
   right: none;
   bottom: none;
@@ -1140,7 +1140,7 @@ body a {
   background-size: contain;
 }
 .privilege .privilege-bottom .privilege__block-text::before {
-  content: url("/img/img/privilege/part_circle-bottom.png");
+  content: url("../img/img/privilege/part_circle-bottom.png");
   left: 20px;
   right: none;
   bottom: none;
@@ -1207,7 +1207,7 @@ body a {
   top: 50%;
   width: 295px;
   height: 321px;
-  background: url("/img/img/comparison/boy_left.png");
+  background: url("../img/img/comparison/boy_left.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1219,7 +1219,7 @@ body a {
   top: none;
   width: 295px;
   height: 321px;
-  background: url("/img/img/comparison/boy_right.png");
+  background: url("../img/img/comparison/boy_right.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1430,7 +1430,7 @@ body a {
   top: none;
   width: 139px;
   height: 210px;
-  background: url("/img/img/description/boy-reading.png");
+  background: url("../img/img/description/boy-reading.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1524,7 +1524,7 @@ body a {
   top: none;
   width: 131px;
   height: 199px;
-  background: url("/img/img/price/girl-left.png");
+  background: url("../img/img/price/girl-left.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1537,7 +1537,7 @@ body a {
   top: none;
   width: 125px;
   height: 271px;
-  background: url("/img/img/price/girl-middle.png");
+  background: url("../img/img/price/girl-middle.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1550,7 +1550,7 @@ body a {
   top: none;
   width: 125px;
   height: 349px;
-  background: url("/img/img/price/girl-right.png");
+  background: url("../img/img/price/girl-right.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1595,7 +1595,7 @@ body a {
           align-items: center;
 }
 .price__item li::before {
-  content: url("/img/img/price/mark.png");
+  content: url("../img/img/price/mark.png");
   left: 0px;
   right: none;
   bottom: none;
@@ -1736,7 +1736,7 @@ body a {
 .comments__block {
   width: auto;
   min-height: 550px;
-  background-image: url("/img/img/comments/figure.png");
+  background-image: url("../img/img/comments/figure.png");
   background-position: 55%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1990,7 +1990,7 @@ body a {
 }
 .questions__accordion-title::after {
   cursor: pointer;
-  content: url("/img/img/questions/btn-close.png");
+  content: url("../img/img/questions/btn-close.png");
   left: none;
   right: 0px;
   bottom: none;
@@ -2089,7 +2089,7 @@ details[open] > .questions__accordion-title::after {
 .connection__wrapper-form {
   max-width: 460px;
   width: 100%;
-  background-image: url("/img/img/connection/subjects_left.png");
+  background-image: url("../img/img/connection/subjects_left.png");
   background-position: left top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2146,7 +2146,7 @@ details[open] > .questions__accordion-title::after {
   background-size: contain;
 }
 .connection .item-number::after {
-  content: url("/img/img/connection/number.png");
+  content: url("../img/img/connection/number.png");
   left: 15px;
   right: none;
   bottom: 50%;
@@ -2158,7 +2158,7 @@ details[open] > .questions__accordion-title::after {
   background-size: contain;
 }
 .connection .item-person::after {
-  content: url("/img/img/connection/person.png");
+  content: url("../img/img/connection/person.png");
   left: 15px;
   right: none;
   bottom: 50%;
@@ -2170,7 +2170,7 @@ details[open] > .questions__accordion-title::after {
   background-size: contain;
 }
 .connection .item-phone::after {
-  content: url("/img/img/connection/phone.png");
+  content: url("../img/img/connection/phone.png");
   left: 15px;
   right: none;
   bottom: 50%;
@@ -2325,7 +2325,7 @@ details[open] > .questions__accordion-title::after {
   margin-left: 31px;
 }
 .footer__doc a::before {
-  content: url("/img/basic_pictures/license.png");
+  content: url("../img/basic_pictures/license.png");
   left: -30px;
   right: none;
   bottom: none;
@@ -2350,7 +2350,7 @@ details[open] > .questions__accordion-title::after {
   margin-left: 45px;
 }
 .footer__address::before {
-  content: url("/img/basic_pictures/place.png");
+  content: url("../img/basic_pictures/place.png");
   left: -45px;
   right: none;
   bottom: none;
@@ -2362,7 +2362,7 @@ details[open] > .questions__accordion-title::after {
   background-size: contain;
 }
 .footer__phone::before {
-  content: url("/img/basic_pictures/telephone.png");
+  content: url("../img/basic_pictures/telephone.png");
   left: -45px;
   right: none;
   bottom: none;
