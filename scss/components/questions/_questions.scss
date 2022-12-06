@@ -42,7 +42,7 @@
     @extend %extend-translateY_minus50;
     @extend %extend-transition_slow;
     @include content(
-      $content: url("/img/img/questions/btn-close.png"),
+      $content: url("./img/img/questions/btn-close.png"),
       $right: 0px,
       $top: 50%,
       $width: 50px,

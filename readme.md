@@ -9,5 +9,5 @@ ___
 
 
 
-The project is at the link at https://github.com/PavelPashyk/Website-School-of-the-Future-
+The project website is located at  https://pavelpashyk.github.io/Website-School-of-the-Future-/
 

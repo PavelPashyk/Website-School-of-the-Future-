@@ -81,7 +81,7 @@
       &::before {
         @extend %extend-translateY_minus50;
         @include content(
-          $content: url("/img/img/price/mark.png"),
+          $content: url("./img/img/price/mark.png"),
           $left: 0px,
           $top: 50%,
           $width: 24px,
