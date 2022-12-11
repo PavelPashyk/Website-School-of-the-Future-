@@ -12,3 +12,6 @@ ___
 
 The project website is located at  https://pavelpashyk.github.io/Website-School-of-the-Future-/
 
+#### Project preview:
+
+![Project preview](./img/basic_pictures/preview.jpg)
